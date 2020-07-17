@@ -29,6 +29,11 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'devise'
+gem 'activeadmin'
+gem 'activeadmin-searchable_select'
+gem 'activeadmin-xls', '~>2.0.0'
+
+
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'

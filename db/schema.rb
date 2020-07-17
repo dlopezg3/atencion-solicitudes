@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_07_16_001207) do
   end
 
   create_table "offices", force: :cascade do |t|
-    t.string "office"
+    t.string "name"
     t.bigint "region_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_07_16_001207) do
   end
 
   create_table "regions", force: :cascade do |t|
-    t.string "region"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 2020_07_16_001207) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
+    t.string "full_name", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
