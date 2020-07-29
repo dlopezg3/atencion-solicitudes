@@ -5,7 +5,7 @@ ActiveAdmin.register Office do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :region_id
+  permit_params :name, :region_id
   #
   # or
   #
@@ -14,5 +14,5 @@ ActiveAdmin.register Office do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
+
 end
