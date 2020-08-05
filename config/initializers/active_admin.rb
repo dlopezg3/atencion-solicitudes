@@ -8,6 +8,13 @@ ActiveAdmin.setup do |config|
   config.use_webpacker = true
   config.download_links = %i[csv xml json xls]
 
+  routes = Rails.application.routes.url_helpers
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add :label => 'Agregar Atención', url: routes.new_admin_atention_path
+    end
+  end
+
 
 
   # Set the link url for the title. For example, to take
