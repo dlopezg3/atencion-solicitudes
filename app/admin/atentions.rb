@@ -17,8 +17,8 @@ ActiveAdmin.register Atention do
       f.input :technologist
       f.input :business
       f.input :channel
-      f.input :cause
-      f.input :subcause
+      f.input :cause, collection: [ "Consultas Aplicativos", "CRM Dynamics", "Facilidades", "Pedidos", "Peticiones", "Quejas", "Radicado", "Recaudo", "Reclamaciones", "Viáticos" ]
+      f.input :subcause, collection: [ "Subcausa", "Ajustes OPEN", "Análisis Caso Facturación", "Análisis de Caso", "Árbol de transacciones", "Asesoría Funcionalidad", "Asesoría PQR", "Asesoría Regla de Negocio", "Asociar y recibir SE", "Atención de Reclamos en CNCRM", "Cambio de custodio", "Cambio de Estado de Corte", "Consulta nemónicos", "Creación de cuenta", "Debido Cobrar", "Debido Proceso", "Digitalizar Soportes a Enter", "Enter", "Falla en aplicativo", "Fenix ATC", "Gaspar", "Hidro", "Inconsistencia en legalización y/o registro", "Ingreso SE", "Matrícula Proveedor", "Matriz de Requisitos", "Mercurio", "Open", "Radicar Mercurio", "Retiro de Factura Web", "Sentry", "Separación/ Unificación Contrato", "Sicoper", "Transacciones", "Validación biometría", "Visado", "Visto bueno rebaja"]
       f.input :detail
       f.input :solution
       f.input :escalation
@@ -47,3 +47,5 @@ ActiveAdmin.register Atention do
   # end
 
 end
+
+
