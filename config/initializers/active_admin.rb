@@ -15,8 +15,6 @@ ActiveAdmin.setup do |config|
     end
   end
 
-
-
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
@@ -128,7 +126,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  # config.root_to = 'dashboard#index'
+  config.root_to = 'atentions#index'
 
   # == Admin Comments
   #
@@ -328,7 +326,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  # config.footer = 'my custom footer text'
+  config.footer = 'Applicación para tomar registro de la atención de solicitudes de los canales presenciales'
 
   # == Sorting
   #
